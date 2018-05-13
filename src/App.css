@@ -1,0 +1,17 @@
+html,
+body {
+  background-color: #fafafa;
+  font-family: "proxima-nova",sans-serif;
+  color: #585F6F;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #585F6F;
+}

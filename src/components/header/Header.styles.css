@@ -1,0 +1,40 @@
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px;
+  display: flex;
+}
+
+.navigation {
+  width: 1000px;
+  margin: 0 auto;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  color: #585f6f;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.link__container {
+  display: flex;
+  align-items: center;
+  top: 50px;
+  right: 0;
+  padding-right: 20px;
+}
+
+.link__text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.link__icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 0 0 10px;
+}
