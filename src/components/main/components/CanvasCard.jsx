@@ -2,6 +2,7 @@ import React from 'react';
 import brain from 'brain.js';
 
 import { imageDataToGrayscale, getBoundingRectangle, centerImage } from 'helpers/imageUtil';
+import successImage from 'data/success.png';
 
 import './Card.styles';
 
@@ -175,7 +176,10 @@ class CanvasCard extends React.Component {
           {this.state.resultNumber &&
             <div className="card__result-number">
               <span className="result__text">Your number is </span>
-              <p className="result__number">{this.state.resultNumber}</p>
+              <p className="result__number">
+                {this.state.resultNumber}
+                <img src={successImage} className="result__image"/>
+              </p>
             </div>
           }
         </div>

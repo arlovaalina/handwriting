@@ -23,11 +23,13 @@ const config = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif)$/i,
-        loaders: [
-          'file-loader?hash=sha512&digest=hex&name=images/[hash].[ext]',
-        ],
-        exclude: /node_modules/,
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
       },
       {
         test: /\.(jsx?|js)$/,
