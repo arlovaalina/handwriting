@@ -76,9 +76,44 @@
   text-align: center;
 }
 
-.card__canvas {
+.canvas {
   width: 280px;
   height: 280px;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
+}
+
+.canvas__clear-button {
+  padding: 10px 20px;
+  border: 1px solid #56B37F;
+  border-radius: 4px;
+  color: #56B37F;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #fff;
+  margin-right: 10px;
+  height: 45px;
+  width: 135px;
+}
+
+.canvas__clear-button:hover {
+  color: #54C786;
+  cursor: pointer;
+}
+
+.canvas__recognize-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #56B37F;
+  height: 45px;
+  width: 135px;
+}
+
+.canvas__recognize-button:hover {
+  background-color: #54C786;
+  cursor: pointer;
 }
