@@ -1,4 +1,6 @@
 import React from 'react';
+import brain from 'brain.js';
+import mnist from 'mnist';
 
 import './Card.styles';
 

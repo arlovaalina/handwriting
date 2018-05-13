@@ -1,6 +1,4 @@
 import React from 'react';
-import brain from 'brain.js';
-import mnist from 'mnist';
 
 import TestCard from './components/TestCard';
 import CanvasCard from './components/CanvasCard';
