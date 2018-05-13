@@ -71,9 +71,32 @@
   flex-direction: column;
 }
 
+.card__result-number {
+  padding-left: 50px;
+  width: 300px;
+  text-align: center;
+}
+
+.result__text {
+  color: #56B37F;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.result__number {
+  margin: 20px;
+  font-size: 72px;
+  font-weight: 300;
+}
+
 .card__result-label {
   width: 200px;
   text-align: center;
+}
+
+.card__canvas {
+  display: flex;
+  flex-direction: row;
 }
 
 .canvas {
