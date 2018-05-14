@@ -9,6 +9,7 @@ import './Card.styles';
 class CanvasCard extends React.Component {
   state = {
     startDrawing: false,
+    isFieldEmpty: true,
   }
 
   getOffsetSum = (elem) => {
@@ -32,6 +33,7 @@ class CanvasCard extends React.Component {
     this.setState({
       ...this.state,
       resultNumber: null,
+      isFieldEmpty: true,
     });
   }
 
@@ -119,6 +121,7 @@ class CanvasCard extends React.Component {
       ...this.state,
       context,
       startDrawing: true,
+      isFieldEmpty: false,
     });
     context.beginPath();
     context.lineWidth = 10;
@@ -169,11 +172,16 @@ class CanvasCard extends React.Component {
             </canvas>
             <div className="canvas__button-container">
               <button className="canvas__clear-button" onClick={this.onClearCanvas}>Clear</button>
-              <button className="canvas__recognize-button" onClick={this.onRecognizeDigit}>Recognize</button>
+              <button
+                className="canvas__recognize-button"
+                onClick={() => !this.state.isFieldEmpty && this.onRecognizeDigit()}
+              >
+                Recognize
+              </button>
             </div>
           </div>
 
-          {this.state.resultNumber &&
+          {(this.state.resultNumber === 0 || this.state.resultNumber) &&
             <div className="card__result-number">
               <span className="result__text">Your number is </span>
               <p className="result__number">

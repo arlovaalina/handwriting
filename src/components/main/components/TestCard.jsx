@@ -16,6 +16,7 @@ class TestCard extends React.Component {
       ...this.state,
       isDigitGenerated: true,
       testSet: testSet[0],
+      result: null,
     });
   }
 
